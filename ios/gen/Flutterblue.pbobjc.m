@@ -171,9 +171,9 @@ GPBEnumDescriptor *ProtosBluetoothState_State_EnumDescriptor(void) {
                                             count:(uint32_t)(sizeof(values) / sizeof(int32_t))
                                      enumVerifier:ProtosBluetoothState_State_IsValidValue];
     GPBEnumDescriptor *expected = nil;
-    if (!atomic_compare_exchange_strong(&descriptor, &expected, worker)) {
+    /*if (!atomic_compare_exchange_strong(&descriptor, &expected, worker)) {
       [worker release];
-    }
+    }*/
   }
   return descriptor;
 }
@@ -569,9 +569,9 @@ GPBEnumDescriptor *ProtosBluetoothDevice_Type_EnumDescriptor(void) {
                                             count:(uint32_t)(sizeof(values) / sizeof(int32_t))
                                      enumVerifier:ProtosBluetoothDevice_Type_IsValidValue];
     GPBEnumDescriptor *expected = nil;
-    if (!atomic_compare_exchange_strong(&descriptor, &expected, worker)) {
+    /*if (!atomic_compare_exchange_strong(&descriptor, &expected, worker)) {
       [worker release];
-    }
+    }*/
   }
   return descriptor;
 }
@@ -1485,9 +1485,9 @@ GPBEnumDescriptor *ProtosWriteCharacteristicRequest_WriteType_EnumDescriptor(voi
                                             count:(uint32_t)(sizeof(values) / sizeof(int32_t))
                                      enumVerifier:ProtosWriteCharacteristicRequest_WriteType_IsValidValue];
     GPBEnumDescriptor *expected = nil;
-    if (!atomic_compare_exchange_strong(&descriptor, &expected, worker)) {
+    /*if (!atomic_compare_exchange_strong(&descriptor, &expected, worker)) {
       [worker release];
-    }
+    }*/
   }
   return descriptor;
 }
@@ -2011,9 +2011,9 @@ GPBEnumDescriptor *ProtosDeviceStateResponse_BluetoothDeviceState_EnumDescriptor
                                             count:(uint32_t)(sizeof(values) / sizeof(int32_t))
                                      enumVerifier:ProtosDeviceStateResponse_BluetoothDeviceState_IsValidValue];
     GPBEnumDescriptor *expected = nil;
-    if (!atomic_compare_exchange_strong(&descriptor, &expected, worker)) {
+    /*if (!atomic_compare_exchange_strong(&descriptor, &expected, worker)) {
       [worker release];
-    }
+    }*/
   }
   return descriptor;
 }
